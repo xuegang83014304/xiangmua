@@ -1,0 +1,148 @@
+@import url(m_style.css);
+html {
+  font-size: 62.5%;
+}
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+.wrap {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.wrap header {
+  width: 100%;
+  height: 3.5rem;
+  background: #f7f7f7;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 1px solid #bfbfbf;
+  line-height: 3.5rem;
+  text-align: center;
+}
+.wrap header h1 {
+  -webkit-box-flex: 1;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.wrap header .left {
+  width: 1.2rem;
+  height: 3.5rem;
+  background: null;
+  margin-left: 1rem;
+}
+.wrap header .left img {
+  width: 0.8rem;
+  height: auto;
+  background: null;
+}
+.wrap header .right {
+  width: 1.7rem;
+  height: 3.5rem;
+  background: null;
+  margin-right: 1rem;
+}
+.wrap header .right img {
+  width: 1.6rem;
+  height: auto;
+  background: null;
+}
+.wrap section {
+  -webkit-box-flex: 1;
+  background: #f2f2f2;
+  overflow: auto;
+}
+.wrap section::-webkit-scrollbar {
+  width: 0;
+}
+.wrap section .account {
+  width: 100%;
+  height: 6.5rem;
+  background: #ffffff;
+  border-top: 1px solid #bfbfbf;
+  border-bottom: 1px solid #BFBFBF;
+  margin-top: 0.5rem;
+  padding: 0  0 0 1rem ;
+  box-sizing: border-box;
+}
+.wrap section .account .import_binding {
+  width: 100%;
+  height: 3.2rem;
+  background: null;
+  border-bottom: 1px solid #BFBFBF;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 3.2rem;
+}
+.wrap section .account .import_binding p {
+  width: 10.5rem;
+  font-size: 1.4rem;
+  color: #676767;
+}
+.wrap section .account .import_binding .txt {
+  -webkit-box-flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+}
+.wrap section .account .import_pwd {
+  width: 100%;
+  height: 3.2rem;
+  background: null;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 3.2rem;
+}
+.wrap section .account .import_pwd p {
+  width: 8.2rem;
+  font-size: 1.4rem;
+  color: #676767;
+}
+.wrap section .account .import_pwd div {
+  -webkit-box-flex: 1;
+}
+.wrap section .account .import_pwd div .txt {
+  width: 100%;
+  height: 100%;
+  background: null;
+  font-size: 1.4rem;
+  border: none;
+  outline: none;
+}
+.wrap section .account .import_pwd h1 {
+  width: 6rem;
+  height: 3.2rem;
+  background: null;
+  border-left: 1px solid #BFBFBF;
+  text-align: center;
+  color: #333333;
+}
+.wrap section .pour {
+  padding-left: 1rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  margin-top: 0.4rem;
+  color: #333333;
+}
+.wrap section .btn {
+  width: 100%;
+  height: 2.5rem;
+  background: null;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  margin-top: 1.5rem;
+}
+.wrap section .btn p {
+  width: 100%;
+  height: 2.5rem;
+  background: #ff7f1c;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  line-height: 2.5rem;
+  font-size: 1.6rem;
+  border-radius: 5px;
+}

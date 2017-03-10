@@ -1,0 +1,187 @@
+@import url(m_style.css);
+.box(@ver:horizontal) {
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.f(@f){
+    float: @f;
+}
+html {
+    font-size: 62.5%; 
+}
+html,
+body,
+.wrap {
+    .full(100%,100%,none);
+}
+.wrap {
+    .box(vertical);
+    header{
+    .full(100%,3.5rem,#ff7f1d);
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    border-bottom: 1px solid #bfbfbf;
+    line-height: 3.5rem;
+    text-align: center;
+    h1{
+        -webkit-box-flex: 1;
+        text-align: center;
+        font-size: 1.6rem;
+        color: #fff;
+    }
+    .left{
+        .full(1.2rem,3.5rem,null);
+        margin-left: 1rem;
+        img{
+            .full(0.8rem,auto,null);
+        }
+    }
+    .right{
+        .full(1.7rem,3.5rem,null);
+        margin-right: 1rem;
+        img{
+            .full(1.6rem,auto,null);
+        }
+    }
+}
+
+.account_balance{
+    .full(100%,16.5rem,#fff);
+    .inquire{
+        .full(100%,3.2rem,null);
+        p{
+            .full(auto,1.6rem,null);
+            margin: 1.2rem 1.5rem 0 0;
+            border: 1px solid #ff7f1d;
+            .f(right);
+            text-align: center;
+            line-height: 1.6rem;
+            a{
+                color: #ff7f1d;
+                font-size: 1rem;
+            }
+        }
+    }
+    h1{
+        text-align: center;
+        font-size: 1.4rem;
+        color: #666666;
+    }
+    h6{
+        text-align: center;
+        height: 2.6rem;
+        line-height: 1.1rem;
+        margin-top: 1.3rem;
+        .span_red{
+            font-size: 1.4rem;
+            color: #ff7f1d;
+        }
+        .span_wid{
+            color: #999999;
+        }
+    }
+    p{
+        .full(100%,1.5rem,null);
+        text-align: center;
+        font-size: 0.8rem;
+        color: #666666;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        word-spacing: normal;
+        span{
+            color: #ff7f1d;
+        }
+    }
+    .btn{
+        .full(100%,3rem,null);
+        margin-top: 2.5rem;
+        text-align: center;
+        span{
+            display: inline-block;
+            .full(6.5rem,2.2rem,null);
+            border: 1px solid #c9c9c9;
+            border-radius: 20px;
+            text-align: center;
+            line-height: 2.2rem;
+            letter-spacing: 1px;
+            color: #ff7f1d;
+            margin: 0 2rem;
+        }
+        span:hover{
+            background: #ff7f1d;
+            color: #fff;
+        }
+        .no{
+            background: #ff7f1d;
+            color: #fff;
+        }
+    }
+}
+.amend{
+    .full(100%,2.6rem,#fff);
+    margin-top: 0.5rem;
+    p{
+        .full(100%,100%,null);
+        padding: 0 1rem;
+        box-sizing: border-box;
+        line-height: 2.6rem;
+        color: #333333;
+        img{
+            .full(1.3rem,auto,null);
+            margin-right: 0.5rem;
+        }
+        span{
+            img{
+                .full(0.6rem,auto,null);
+                margin-right: 0;
+            }
+            .f(right);
+        }
+    }
+}
+section{
+    -webkit-box-flex: 1;
+    overflow: auto;
+    &::-webkit-scrollbar{width: 0;}
+    .content{
+        .full(100%,auto,#fff);
+        margin-top: 0.5rem;
+        h1{
+            .full(100%,2.6rem,null);
+            line-height: 2.6rem;
+            color: #333333;
+            border-bottom: 1px solid #f2f2f2;
+            padding: 0 1rem;
+            box-sizing: border-box;
+        }
+        .contents{
+            .full(100%,4rem,#fff);
+            margin-top: 0.5rem;
+            border-bottom: 1px solid #f2f2f2;
+            ul{
+                .full(100%,3rem,null);
+                padding: 0.5rem 0.7rem;
+                box-sizing: border-box;
+                color: #666666;
+                .left{
+                    .f(left);
+                    .blue{
+                        color: #5054b1;
+                    }
+                    .red{
+                        color: #f64444;
+                    }
+                }
+                .right{
+                    .f(right);
+                }
+            }
+        }
+    }
+}
+}

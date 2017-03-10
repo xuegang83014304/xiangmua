@@ -1,0 +1,114 @@
+@import url(m_style.css);
+.box(@ver:horizontal) {
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.f(@f){
+    float: @f;
+}
+html {
+    font-size: 62.5%; 
+}
+html,
+body,
+.wrap {
+    .full(100%,100%,none);
+}
+.wrap {
+    .box(vertical);
+    header{
+    .full(100%,3.5rem,#f7f7f7);
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    border-bottom: 1px solid #bfbfbf;
+    line-height: 3.5rem;
+    text-align: center;
+    h1{
+        -webkit-box-flex: 1;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    .left{
+         .full(1.2rem,3.5rem,null);
+        margin-left: 1rem;
+        img{
+             .full(0.8rem,auto,null);
+        }
+    }
+    .right{
+         .full(1.7rem,3.5rem,null);
+        margin-right: 1rem;
+        img{
+             .full(1.6rem,auto,null);
+        }
+    }
+}
+
+section{
+    -webkit-box-flex: 1;
+    background: #f2f2f2;
+    overflow: auto;
+    &::-webkit-scrollbar{width: 0;}
+    .content{
+        .full(100%,6.5rem,#fff);
+        ul{
+            .full(auto,100%,null);
+            line-height: 2rem;
+            padding: 0.4rem 0 0 1rem;
+            color: #666666;
+            .no{
+                color: #ff7f1d;
+            }
+        }
+    }
+    .way{
+        .full(100%,9.5rem,#fff);
+        margin-top: 0.5rem;
+        h1{
+            .full(auto,2.5rem,null);
+            border-bottom: 1px solid #f2f2f2;
+            padding-left: 1rem;
+            line-height: 2.5rem;
+            color: #666666;
+        }
+        p{
+            .full(auto,3.3rem,null);
+            line-height: 3.3rem;
+            padding: 0 1rem;
+            a{
+                color: #484848;
+                img{
+                    .full(2.2rem,auto,null);
+                    margin-right: 0.5rem;
+                }
+            }
+            span{
+                .f(right);
+                img{
+                    .full(2.2rem,auto,null);
+                }
+            }
+        }
+    }
+    .btn{
+        .full(100%,2.5rem,null);
+        padding: 0 1rem;
+        box-sizing: border-box;
+        margin-top: 1.5rem;
+        p{
+            .full(100%,2.5rem,#ff7f1c);
+            text-align: center;
+            color: #fff;
+            line-height: 2.5rem;
+            font-size: 1.6rem;
+            border-radius: 5px;
+            letter-spacing:1px;
+        }
+    }
+}
+}

@@ -1,0 +1,217 @@
+@import url(m_style.css);
+html {
+  font-size: 62.5%;
+}
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+.wrap {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.wrap header {
+  width: 100%;
+  height: 3.5rem;
+  background: #ff7f1d;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 1px solid #bfbfbf;
+  line-height: 3.5rem;
+  text-align: center;
+}
+.wrap header h1 {
+  -webkit-box-flex: 1;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #fff;
+}
+.wrap header .left {
+  width: 1.2rem;
+  height: 3.5rem;
+  background: null;
+  margin-left: 1rem;
+}
+.wrap header .left img {
+  width: 0.8rem;
+  height: auto;
+  background: null;
+}
+.wrap header .right {
+  width: 1.7rem;
+  height: 3.5rem;
+  background: null;
+  margin-right: 1rem;
+}
+.wrap header .right img {
+  width: 1.6rem;
+  height: auto;
+  background: null;
+}
+.wrap .account_balance {
+  width: 100%;
+  height: 16.5rem;
+  background: #ffffff;
+}
+.wrap .account_balance .inquire {
+  width: 100%;
+  height: 3.2rem;
+  background: null;
+}
+.wrap .account_balance .inquire p {
+  width: auto;
+  height: 1.6rem;
+  background: null;
+  margin: 1.2rem 1.5rem 0 0;
+  border: 1px solid #ff7f1d;
+  float: right;
+  text-align: center;
+  line-height: 1.6rem;
+}
+.wrap .account_balance .inquire p a {
+  color: #ff7f1d;
+  font-size: 1rem;
+}
+.wrap .account_balance h1 {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #666666;
+}
+.wrap .account_balance h6 {
+  text-align: center;
+  height: 2.6rem;
+  line-height: 1.1rem;
+  margin-top: 1.3rem;
+}
+.wrap .account_balance h6 .span_red {
+  font-size: 1.4rem;
+  color: #ff7f1d;
+}
+.wrap .account_balance h6 .span_wid {
+  color: #999999;
+}
+.wrap .account_balance p {
+  width: 100%;
+  height: 1.5rem;
+  background: null;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #666666;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-spacing: normal;
+}
+.wrap .account_balance p span {
+  color: #ff7f1d;
+}
+.wrap .account_balance .btn {
+  width: 100%;
+  height: 3rem;
+  background: null;
+  margin-top: 2.5rem;
+  text-align: center;
+}
+.wrap .account_balance .btn span {
+  display: inline-block;
+  width: 6.5rem;
+  height: 2.2rem;
+  background: null;
+  border: 1px solid #c9c9c9;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 2.2rem;
+  letter-spacing: 1px;
+  color: #ff7f1d;
+  margin: 0 2rem;
+}
+.wrap .account_balance .btn span:hover {
+  background: #ff7f1d;
+  color: #fff;
+}
+.wrap .account_balance .btn .no {
+  background: #ff7f1d;
+  color: #fff;
+}
+.wrap .amend {
+  width: 100%;
+  height: 2.6rem;
+  background: #ffffff;
+  margin-top: 0.5rem;
+}
+.wrap .amend p {
+  width: 100%;
+  height: 100%;
+  background: null;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  line-height: 2.6rem;
+  color: #333333;
+}
+.wrap .amend p img {
+  width: 1.3rem;
+  height: auto;
+  background: null;
+  margin-right: 0.5rem;
+}
+.wrap .amend p span {
+  float: right;
+}
+.wrap .amend p span img {
+  width: 0.6rem;
+  height: auto;
+  background: null;
+  margin-right: 0;
+}
+.wrap section {
+  -webkit-box-flex: 1;
+  overflow: auto;
+}
+.wrap section::-webkit-scrollbar {
+  width: 0;
+}
+.wrap section .content {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  margin-top: 0.5rem;
+}
+.wrap section .content h1 {
+  width: 100%;
+  height: 2.6rem;
+  background: null;
+  line-height: 2.6rem;
+  color: #333333;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.wrap section .content .contents {
+  width: 100%;
+  height: 4rem;
+  background: #ffffff;
+  margin-top: 0.5rem;
+  border-bottom: 1px solid #f2f2f2;
+}
+.wrap section .content .contents ul {
+  width: 100%;
+  height: 3rem;
+  background: null;
+  padding: 0.5rem 0.7rem;
+  box-sizing: border-box;
+  color: #666666;
+}
+.wrap section .content .contents ul .left {
+  float: left;
+}
+.wrap section .content .contents ul .left .blue {
+  color: #5054b1;
+}
+.wrap section .content .contents ul .left .red {
+  color: #f64444;
+}
+.wrap section .content .contents ul .right {
+  float: right;
+}

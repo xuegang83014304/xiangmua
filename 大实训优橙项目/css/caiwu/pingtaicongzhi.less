@@ -1,0 +1,96 @@
+@import url(m_style.css);
+.box(@ver:horizontal) {
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+html {
+    font-size: 62.5%; 
+}
+html,
+body,
+.wrap {
+    .full(100%,100%,none);
+}
+.wrap {
+    .box(vertical);
+}
+header{
+     .full(100%,3.5rem,#f7f7f7);
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    border-bottom: 1px solid #bfbfbf;
+    line-height: 3.5rem;
+    text-align: center;
+    h1{
+        -webkit-box-flex: 1;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    .left{
+         .full(1.2rem,3.5rem,null);
+        margin-left: 1rem;
+        img{
+             .full(0.8rem,auto,null);
+        }
+    }
+    .right{
+        .full(1.7rem,3.5rem,null);
+        margin-right: 1rem;
+        img{
+             .full(1.6rem,auto,null);
+        }
+    }
+}
+
+section{
+    -webkit-box-flex: 1;
+    background: #f2f2f2;
+    overflow: auto;
+    &::-webkit-scrollbar{width: 0;}
+    .recharge{
+         .full(auto,3rem,#fff);
+        padding-left:1rem ;
+        p{
+             .full(100%,3rem,#fff);
+            font-size: 1.4rem;
+            line-height: 3rem;
+            display: -webkit-box;
+            -webkit-box-orient: horizontal;
+            span{
+                display: block;
+            }
+            .left{
+                 .full(6.5rem,3rem,null);
+            }
+            .right{
+                -webkit-box-flex: 1;
+                .txt{
+                     .full(100%,100%,null);
+                    border: none;
+                    outline: none;
+                    text-align: center;
+                }
+            }
+        } 
+    }
+    .btn{
+         .full(100%,2.5rem,null);
+        padding: 0 1rem;
+        box-sizing: border-box;
+        margin-top: 1.5rem;
+        p{
+             .full(100%,2.5rem,#ff7f1c);
+            text-align: center;
+            color: #fff;
+            line-height: 2.5rem;
+            font-size: 1.6rem;
+            border-radius: 5px;
+            letter-spacing:1px;
+        }
+    }
+}
